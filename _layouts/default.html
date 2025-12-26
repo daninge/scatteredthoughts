@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% if page.title %}{{ page.title }} — {% endif %}{{ site.title }}</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #faf9f7;
+      color: #2c2c2c;
+      line-height: 1.7;
+      padding: 3rem 1.5rem;
+      max-width: 640px;
+      margin: 0 auto;
+    }
+    
+    a {
+      color: #2c2c2c;
+      text-decoration: none;
+    }
+    
+    a:hover {
+      color: #8b4513;
+    }
+    
+    .site-title {
+      font-size: 1.5rem;
+      font-weight: normal;
+      letter-spacing: 0.02em;
+      margin-bottom: 3rem;
+      border-bottom: 1px solid #e0ded8;
+      padding-bottom: 1rem;
+    }
+    
+    .content {
+      min-height: 60vh;
+    }
+    
+    .post-list {
+      list-style: none;
+    }
+    
+    .post-list li {
+      margin-bottom: 1.5rem;
+    }
+    
+    .post-list a {
+      font-size: 1.1rem;
+    }
+    
+    .post-date {
+      display: block;
+      font-size: 0.85rem;
+      color: #888;
+      margin-top: 0.2rem;
+    }
+    
+    article h1 {
+      font-size: 1.75rem;
+      font-weight: normal;
+      margin-bottom: 0.5rem;
+    }
+    
+    article .date {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 2rem;
+    }
+    
+    article p {
+      margin-bottom: 1.25rem;
+    }
+    
+    article h2, article h3 {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+      font-weight: normal;
+    }
+    
+    article code {
+      background: #eee;
+      padding: 0.15rem 0.4rem;
+      border-radius: 3px;
+      font-size: 0.9em;
+    }
+    
+    article pre {
+      background: #2c2c2c;
+      color: #f0f0f0;
+      padding: 1rem;
+      border-radius: 4px;
+      overflow-x: auto;
+      margin-bottom: 1.25rem;
+    }
+    
+    article pre code {
+      background: none;
+      padding: 0;
+    }
+    
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-size: 0.9rem;
+      color: #888;
+    }
+    
+    .back-link:hover {
+      color: #2c2c2c;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </div>
+  </header>
+  
+  <main class="content">
+    {{ content }}
+  </main>
+</body>
+</html>
+

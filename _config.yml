@@ -1,0 +1,14 @@
+title: Scattered thoughts
+description: Miscellaneous observations on how the world works
+url: ""
+baseurl: ""
+
+markdown: kramdown
+permalink: /:title/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
