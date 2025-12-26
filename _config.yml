@@ -1,7 +1,7 @@
 title: Scattered thoughts
 description: Miscellaneous observations on how the world works
-url: ""
-baseurl: ""
+url: "https://daninge.github.io"
+baseurl: "/scatteredthoughts"
 
 markdown: kramdown
 permalink: /:title/
